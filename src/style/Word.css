@@ -1,0 +1,101 @@
+.word {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ECEFF1;
+    height: fit-content;
+}
+
+.word.last {
+    border-bottom: none;
+}
+
+.return-search-button,
+.inflection-link {
+    color: #2e86c1;
+    margin-top: 3rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.word-info {
+    display: flex;
+    flex-direction: column;
+    width: 16rem;
+    margin-right: 2rem;
+}
+
+.hangul {
+    font-family: "maruburiOTF";
+    font-size: 200%;
+    font-weight: bolder;
+    margin-top: 0.2em;
+    width: fit-content;
+}
+
+.hangul .search:hover {
+    color: red;
+}
+
+.hangul sup {
+    font-size: 70%;
+    margin-left: 0.16em;
+}
+
+.pronounciation {
+    width: fit-content;
+    font-family: "maruburiOTF";
+    color: #838383;
+}
+
+.pronounciation:hover {
+    cursor: pointer;
+}
+
+.hanja {
+    margin-top: 0.7em;
+    font-size: 130%;
+    font-family: "maruburiOTF";
+}
+
+.inflection-container {
+    padding-right: 2em;
+    width: 40rem;
+}
+
+.inflection-link:hover {
+    cursor: pointer;
+}
+
+.anki-button {
+    margin-top: 1em;
+    color: #2e86c1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.senses {
+    padding-right: 2em;
+    width: 40rem;
+}
+
+.sense {
+    display: flex;
+    flex-direction: row;
+}
+
+.sense-info {
+    display: flex;
+    flex-direction: column;
+}
+
+svg {
+    fill: #FBC02D;
+    width: 1.3em;
+    height: 1.3em;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.star-container {
+    float: left;
+}

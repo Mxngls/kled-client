@@ -1,0 +1,27 @@
+{
+    "note": {
+        "deckName": "Default",
+        "modelName": "KLD",
+        "fields": {
+            "id": "",
+            "hangul": "",
+            "pronounciation": "",
+            "audioUrl": "",
+            "hanja": "",
+            "wordTypeEng": "",
+            "senses": ""
+        },
+        "options": {
+            "allowDuplicate": false,
+            "duplicateScope": "deck",
+            "duplicateScopeOptions": {
+                "deckName": "Default",
+                "checkChildren": false,
+                "checkAllModels": false
+            }
+        },
+        "tags": [
+            "KLD"
+        ]
+    }
+}

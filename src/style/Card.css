@@ -1,0 +1,115 @@
+#sense-container {
+    margin-top: 10vh;
+    text-align: center;
+    height: auto;
+}
+
+#sense-content {
+    font-family: "Arial";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+#sense-info {
+    height: 120.5px;
+    margin-bottom: 15px;
+}
+
+.sense {
+    padding: 6px 10px 6px 6px;
+    border-radius: 25px;
+    background-color: #f8f4ff;
+    margin-bottom: 5px;
+}
+
+#filler-top-front:empty {
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+#filler-top-back:empty {
+    height: 120.5px;
+    margin-bottom: 15px;
+}
+
+#pronounciation {
+    color: #a9a9a9;
+    height: 15px;
+    margin-bottom: 5px;
+    font-size: 85%;
+}
+
+#play-audio {
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+#hangul a {
+    color: #4166f5;
+    font-size: 185%;
+    margin-bottom: 5px;
+}
+
+#hangul sup {
+    font-size: 70%;
+    margin-left: -5px;
+}
+
+#hanja {
+    margin-bottom: 5px;
+}
+
+#word-type-eng {
+    font-size: 80%;
+    margin-bottom: 5px;
+}
+
+.translation {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-style: italic;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+.definition {
+    margin-top: 10px;
+    padding-left: 26px;
+}
+
+.sense-nr {
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 6px;
+}
+
+.examples ul {
+    padding-left: 44px;
+    list-style-position: outside;
+}
+
+.reference {
+    margin-left: 32px;
+}
+
+.reference-type {
+    display: inline-block;
+}
+
+.reference-value {
+    margin-left: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .sense {
+        background-color: #2b3856;
+    }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    #sense-info {
+        margin-bottom: 25px;
+    }
+}

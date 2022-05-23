@@ -1,0 +1,45 @@
+
+.eng-type {
+    color: #838383;
+}
+
+.sense-nr {
+    margin: 1em 0.4em 0 0;
+    font-weight: bold;
+}
+
+.english-translation {
+    margin-top: 1em;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.english-definition {
+    margin-top: 1em;
+}
+
+.example {
+    font-family: "NanumMyeongjoOTF";
+    font-size: 120%;
+    margin-top: 0.3em;
+}
+
+.reference {
+    max-width: fit-content;
+    display: flex;
+    border: solid 3px lightgray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0.4em 1em 0.4em 1em;
+    margin-top: 1em;
+}
+
+.reference-type {
+    margin-right: 1em;
+}
+
+.reference-value.link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #2e86c1;
+}
