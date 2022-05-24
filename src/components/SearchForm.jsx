@@ -110,6 +110,7 @@ function SearchForm({
                             keyWord: inpVal,
                             resCount: json.ResCount,
                             pages: json.Pages,
+                            currentPage: 1,
                         }),
                         setInput((input) => ({ ...input, word: inpVal }))
                     );

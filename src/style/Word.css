@@ -76,12 +76,14 @@
 
 .senses {
     padding-right: 2em;
-    width: 40rem;
+    width: 40em;
 }
 
 .sense {
+    width: auto;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
 }
 
 .sense-info {

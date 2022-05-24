@@ -50,7 +50,7 @@ const SearchContainer = ({
                     key={i}
                     onClick={(event) => handleSubmitSearch(event, pages[i])}
                 >
-                    {<div className="page">{pages[i]}</div>}
+                    {<div className={`page ${currentPage === pages[i] ? "active" : ""}`}>{pages[i]}</div>}
                 </div>
             );
         } else if (pages[i] === -4) {
