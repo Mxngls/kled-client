@@ -115,9 +115,11 @@ const renderSearch = ({
                     if (result[i]["Senses"] !== null)
                         senses.push(
                             renderSenses({
-                                input: result[i][key],
+                                result: result[i]["Senses"],
                                 id: result[i]["Id"],
-                                isSearch: search.isSearch,
+                                input: input,
+                                search: search,
+                                setSearch: setSearch
                             })
                         );
                     break;

@@ -14,24 +14,27 @@ import {
 import { Sense } from "../components/WordComponents";
 import handleOnClickView from "../handler/handleOnClickView";
 
-const renderSenses = ({ input, id, isSearch }) => {
+const renderSenses = ({ result, id, input, search, setSearch }) => {
     let senses = [];
-    for (let i = 0; i < input.length; i++) {
+    console.log(result)
+    for (let i = 0; i < result.length; i++) {
         let sense = [];
         let senseInfo = [];
-        if (input.length > 1) {
-            sense.push(<SenseNr index={i} key={`SenseNr-${input["Id"]}`} />);
+        if (result.length > 1) {
+            sense.push(<SenseNr index={i} key={`SenseNr-${result["Id"]}`} />);
         }
-        for (let key in input[i]) {
+        for (let key in result[i]) {
             switch (key) {
                 case "Reference":
-                    if (!isSearch && !!input[i]["Reference"]) {
+                    if (!search.isSearch && !!result[i]["Reference"]) {
                         senseInfo.push(
                             renderReferences({
                                 id: id,
-                                refs: input[i]["Reference"],
+                                refs: result[i]["Reference"],
                                 handleOnClickView: handleOnClickView,
                                 input: input,
+                                search: search,
+                                setSearch: setSearch,
                             })
                         );
                     }
@@ -39,10 +42,10 @@ const renderSenses = ({ input, id, isSearch }) => {
                 case "KrDefinition":
                     break;
                 case "Examples":
-                    if (input[i][key] !== null) {
+                    if (result[i][key] !== null) {
                         senseInfo.push(
                             <Examples
-                                content={renderExamples(input[i]["Examples"])}
+                                content={renderExamples(result[i]["Examples"])}
                                 i={i}
                                 key={`Examples-${id}`}
                             />
@@ -52,7 +55,7 @@ const renderSenses = ({ input, id, isSearch }) => {
                 case "Translation":
                     senseInfo.push(
                         <Translation
-                            content={input[i]["Translation"]}
+                            content={result[i]["Translation"]}
                             key={`Translation-${id}`}
                         />
                     );
@@ -60,7 +63,7 @@ const renderSenses = ({ input, id, isSearch }) => {
                 case "Definition":
                     senseInfo.push(
                         <Definition
-                            content={input[i]["Definition"]}
+                            content={result[i]["Definition"]}
                             key={`Definition-${id}`}
                         />
                     );

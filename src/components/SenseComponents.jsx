@@ -31,7 +31,15 @@ const Example = ({ content }) => {
     );
 };
 
-const Reference = ({ type, value, id, handleOnClickView, lang, langCode }) => {
+const Reference = ({
+    type,
+    value,
+    id,
+    handleOnClickView,
+    search,
+    setSearch,
+    input,
+}) => {
     let refClass = "";
     let r = [];
     if (type !== "") {
@@ -49,7 +57,12 @@ const Reference = ({ type, value, id, handleOnClickView, lang, langCode }) => {
             <div
                 onClick={() => {
                     if (id !== "") {
-                        handleOnClickView(id, lang, langCode);
+                        handleOnClickView({
+                            id: id,
+                            search: search,
+                            input: input,
+                            setSearch: setSearch,
+                        });
                     } else {
                         return null;
                     }

@@ -90,9 +90,11 @@ const renderView = ({ result, input, search, setSearch}) => {
                 if (result["Senses"] != null) {
                     senses.push(
                         renderSenses({
-                            input: result[key],
+                            result: result[key],
+                            input: input,
                             id: result["Id"],
-                            isSearch: search.isSearch,
+                            search: search,
+                            setSearch: setSearch
                         })
                     );
                 }
